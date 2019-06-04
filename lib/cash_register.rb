@@ -5,6 +5,7 @@ class CashRegister
     @total = 0
     @discount = discount
     @items = []
+    @last_transaction = 0
   end
   
   def add_items(title, price, quantity = 1)
@@ -18,7 +19,11 @@ class CashRegister
     end
   end
   
-  
+  def apply_discount
+    if self.discount > 0
+      
+    
+  end
   
   
 end
