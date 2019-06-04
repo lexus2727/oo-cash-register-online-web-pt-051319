@@ -1,7 +1,7 @@
 class CashRegister
   
   attr_accessor :total, :discount,  :items, :last_transaction
-  def initialization(discount = 0)
+  def initialize(discount = 0)
     @total = 0
     @discount = discount
     @items = []
@@ -30,5 +30,9 @@ end
   
   def items
     @items
+  end
+  
+  def void_last_transaction
+    
   end
 end
