@@ -33,6 +33,6 @@ end
   end
   
   def void_last_transaction
-    
-  end
+    self.total -= self.last_transaction
+    end
 end
