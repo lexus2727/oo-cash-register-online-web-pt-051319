@@ -9,6 +9,7 @@ class CashRegister
   
   def add_items(title, price, quantity = 1)
     @price = price
+    quantity.times{@items << title}
     
     
   end
